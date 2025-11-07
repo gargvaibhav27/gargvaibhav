@@ -1,0 +1,22 @@
+nav {
+  background-color: #cd75ea;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: #ddd;
+}
