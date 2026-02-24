@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.send('this is about page');
 })
-
 app.listen(port, () => {  
     console.log(`server is run at:http://localhost:${port}`);
 })
+// node app.js
