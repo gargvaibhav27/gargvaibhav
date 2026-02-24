@@ -12,4 +12,7 @@ app.get('/about', (req, res) => {
 app.listen(port, () => {  
     console.log(`server is run at:http://localhost:${port}`);
 })
-// node app.js
+// node app.js for running on terminal
+// npm init -y for backend
+// npm create vite@latest for frontend
+// npm i express for express
