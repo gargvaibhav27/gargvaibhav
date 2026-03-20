@@ -16,3 +16,8 @@ app.listen(port, () => {
 // npm init -y for backend
 // npm create vite@latest for frontend
 // npm i express for express
+// CRUD
+// C-Create-Get
+// R-Read-Post
+// U-Update-Put
+// D-Delete-Delete
