@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+
 //Data Base(json) json is used to store data and transfer the data. object store karne ke liye use hota hai.
 const students = [
   {
@@ -31,9 +32,21 @@ app.get('/read/:id', (req,res)=>{
 })
 
 
+//API FOR CREATE (C)
+app.post('/add',(req,res)=>{
+  const newdata={
+    id:students.lenght+1,
+    ...req.body
+  }
+  students.push(newdata);
+  res.json({message:"data add", students})
+})
+
 app.listen(port, () => {
-  console.log(`server is run at:http://localhost:${port}`);
+  console.log(`server is run at: http://localhost:${port}`);
 });
+
+
 // app.get('/', (req, res) => {
 //     res.send('this is my first server');
 // })
